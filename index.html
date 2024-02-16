@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurent Site</title>
+  <link rel="stylesheet" href="index.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+</head>
+<body>
+  <header>
+    <div class="nav">
+
+      <a href="#" class="logo">
+        <ion-icon name="fast-food"></ion-icon>
+        ToYummy
+      </a>
+
+      
+
+      <div class="box">
+        <div class="cart-count">0</div>
+        <ion-icon name="cart"  id="cart-icon" ></ion-icon>
+      </div>
+
+      <div class="cart">
+        <div class="cart-title">Cart Items</div>
+        <div class="cart-content">
+
+        </div>
+        
+      <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">Rs.0</div>
+      </div>
+
+      <button class="btn-buy" onclick="fun()" value="Place Order">Place Order</button>
+
+      <ion-icon name="close" id="cart-close"></ion-icon>
+
+      </div>
+    </div>
+
+    
+  </header>
+  <div class="container">
+    <h2 class="title"></h2>
+    <div class="shop-content">
+<!-- items  -->
+
+      <div class="food-box">
+        <div class="pic">
+          <img src="-Pav-Bhaji-.jpg" class="food-img">
+        </div>
+        <h2 class="food-title">Pav Bhaji</h2>
+        <span class="food-price">Rs.60</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+      <div class="food-box">
+        <div class="pic"><img src="best-misal-pav-.webp" class="food-img"></div>
+        <h2 class="food-title">Misal Pav</h2>
+        <span class="food-price">Rs.70</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="Onion-Dosa.jpg" class="food-img"></div>
+        <h2 class="food-title">Onion-Dosa</h2>
+        <span class="food-price">Rs.50</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="idli.jpg" class="food-img"></div>
+        <h2 class="food-title">Idli</h2>
+        <span class="food-price">Rs.40</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="medu-wada.jpg" class="food-img"></div>
+        <h2 class="food-title">Medu-Wada</h2>
+        <span class="food-price">Rs.40</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="bati.jpg" class="food-img"></div>
+        <h2 class="food-title">Dal-Bati</h2>
+        <span class="food-price">Rs.90</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+  
+      <div class="food-box">
+        <div class="pic"><img src="chole-bhature-.jpg" class="food-img"></div>
+        <h2 class="food-title">Chole-Bhature</h2>
+        <span class="food-price">Rs.100</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+  
+      <div class="food-box">
+        <div class="pic"><img src="paneer.jpg" class="food-img"></div>
+        <h2 class="food-title">Panner Masala</h2>
+        <span class="food-price">Rs.90</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="kajucurry.jpg" class="food-img"></div>
+        <h2 class="food-title">Kaju-Curry</h2>
+        <span class="food-price">Rs.150</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="kadhi.webp" class="food-img"></div>
+        <h2 class="food-title">Kadhi</h2>
+        <span class="food-price">Rs.60</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="Vada-Pav-.webp" class="food-img"></div>
+        <h2 class="food-title">Vada-Pav</h2>
+        <span class="food-price">Rs.15</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="poha.jpeg" class="food-img"></div>
+        <h2 class="food-title">Pohe</h2>
+        <span class="food-price">Rs.30</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="pani-puri.jpg" class="food-img"></div>
+        <h2 class="food-title">Pani-Puri</h2>
+        <span class="food-price">Rs.25</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="pizza.avif" class="food-img"></div>
+        <h2 class="food-title">Pizza</h2>
+        <span class="food-price">Rs.100</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="burgers_.jpg" class="food-img"></div>
+        <h2 class="food-title">Veg-Burger</h2>
+        <span class="food-price">Rs.70</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="noodles.jpeg" class="food-img"></div>
+        <h2 class="food-title">Veg-Noodles</h2>
+        <span class="food-price">Rs.75</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="Veg Biryani.webp" class="food-img"></div>
+        <h2 class="food-title">Veg-Biryani</h2>
+        <span class="food-price">Rs.70</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="biryani.jpg" class="food-img"></div>
+        <h2 class="food-title">Non-Biryani</h2>
+        <span class="food-price">Rs.90</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="steam rice.jpeg" class="food-img"></div>
+        <h2 class="food-title">Steam-Rice</h2>
+        <span class="food-price">Rs.50</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="basmati-rice-.jpg" class="food-img"></div>
+        <h2 class="food-title">Jeera-rice</h2>
+        <span class="food-price">Rs.70</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="chicken-curry.webp" class="food-img"></div>
+        <h2 class="food-title">Chicken-Curry</h2>
+        <span class="food-price">Rs.120</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="Tandoori-Chicken..webp" class="food-img"></div>
+        <h2 class="food-title">Tandoori-Chicken</h2>
+        <span class="food-price">Rs.250</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="Dhaba-Style-Egg-Curry.jpg" class="food-img"></div>
+        <h2 class="food-title">Egg-Curry</h2>
+        <span class="food-price">Rs.100</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="roti.jpg" class="food-img"></div>
+        <h2 class="food-title">Roti</h2>
+        <span class="food-price">Rs.15</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="tandoori-roti.jpg" class="food-img"></div>
+        <h2 class="food-title">Tandoori-Roti</h2>
+        <span class="food-price">Rs.20</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="puran_poli_recipe_.avif" class="food-img"></div>
+        <h2 class="food-title">Puran-Poli</h2>
+        <span class="food-price">Rs.30</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="Naan.jpg" class="food-img"></div>
+        <h2 class="food-title">Butter-Naan </h2>
+        <span class="food-price">Rs.30</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="Bajra-Bhakri.jpeg" class="food-img"></div>
+        <h2 class="food-title">Bajra-Bhakri</h2>
+        <span class="food-price">Rs.30</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="fish-curry-.jpg" class="food-img"></div>
+        <h2 class="food-title">Fish-Curry</h2>
+        <span class="food-price">Rs.200</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="KERELA.FISH.jpg" class="food-img"></div>
+        <h2 class="food-title">Fish-Fry</h2>
+        <span class="food-price">Rs.300</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="jalebi-.jpg" class="food-img"></div>
+        <h2 class="food-title">Jalebi</h2>
+        <span class="food-price">Rs.90(kg)</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="Jalebi-Rabri.jpg" class="food-img"></div>
+        <h2 class="food-title">Jalebi-Rabri</h2>
+        <span class="food-price">Rs.290(Kg)</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="_gulab.jpg" class="food-img"></div>
+        <h2 class="food-title">Gulab-Jamun</h2>
+        <span class="food-price">Rs.200(Kg)</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="Ladoo.jpg" class="food-img"></div>
+        <h2 class="food-title">Motichur Laddu</h2>
+        <span class="food-price">Rs.310(Kg)</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="Rasmalai.jpg" class="food-img"></div>
+        <h2 class="food-title">Rasmalai</h2>
+        <span class="food-price">Rs.400(Kg)</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="sweet-soan-papdi.webp" class="food-img"></div>
+        <h2 class="food-title">Soan-Papdi</h2>
+        <span class="food-price">Rs.300(Kg)</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
